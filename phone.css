@@ -1,0 +1,58 @@
+body
+{
+	width: 600px;
+	margin: auto;
+}
+
+input
+{
+	margin: 5px;
+}
+
+table
+{
+	width: 100%;
+}
+
+th
+{
+	text-align: left;
+	font-style: italic;
+	font-size: larger;
+}
+
+/*#contacts*/
+/*{*/
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
+	/*width: 450px;*/
+/*}*/
+
+#dialer-input, .add-contact-inputs
+{
+	width: 320px;
+}
+
+#dialer-buttons
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 330px;
+}
+
+.main-dialer-buttons
+{
+	width: 100px;
+	margin: 5px;
+}
+
+.dial-clear-buttons
+{
+	width: 155px;
+	margin: 5px;
+}
+
+.add-contact-buttons, .contact-list-entry
+{
+	margin: 5px;
+}

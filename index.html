@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+
+<title>Assignment 3</title>
+
+<!-- load jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<!-- load jquery ui -->
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
+
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "phone.css" />
+
+</head>
+
+
+
+<body>
+
+<div id="tabs" role="main" aria-live="polite">
+	<ul>
+		<li><a href="#dialer" accesskey="d">Dialer</a></li>
+		<li><a href="#contacts" accesskey="c">Contact List</a></li>
+		<li><a href="#add-contact" accesskey="a">Add Contact</a></li>
+		<li><a href="#help" accesskey="h">Help</a></li>
+	</ul>
+
+	<div id="dialer">
+		<input id="dialer-input" accesskey="i" />
+	</div>
+	<div id="contacts">
+		<table id="contacts-table">
+			<thead><tr><th style="font-size:smaller; width: 5em;">icon</th><th>Name</th><th>Phone</th><th>Email</th></tr></thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<div id="add-contact">
+		Name <br /> <input id="add-contact-name" class="add-contact-inputs" placeholder="Jane Smith" /> <br />
+		Phone <br /> <input id="add-contact-phone" class="add-contact-inputs" placeholder="123-456-7890" /> <br />
+		Email <br /> <input id="add-contact-email" class="add-contact-inputs" placeholder="jane.smith@colorado.edu" /> <br />
+		<button id="add-contact-add" class="ui-button add-contact-buttons" onclick="addContactCallback()">Add Contact</button>
+		<button id="add-contact-clear" class="ui-button add-contact-buttons" onclick="addContactClearCallback()">Clear</button>
+	</div>
+	<div id="help">
+		<h2><a href="https://en.wikipedia.org/wiki/Access_key" target="_blank">Access Keys for this site</a></h2>
+		<table>
+		<thead>
+			<tr><th>key</th><th>function</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>d</td><td>switch to <b>D</b>ialer tab</td></tr>
+			<tr><td>c</td><td>switch to <b>C</b>ontact List tab</td></tr>
+			<tr><td>a</td><td>switch to <b>A</b>dd Contact tab</td></tr>
+			<tr><td>h</td><td>switch to <b>H</b>elp tab</td></tr>
+			<tr><td>i</td><td>focus dialer <b>i</b>nput field</td></tr>
+			<tr><td>z</td><td>Dial / start call</td></tr>
+			<tr><td>x</td><td>clear Dialer input field</td></tr>
+		</tbody>
+		</table>
+		<h2>Accessibility Features of this site</h2>
+		<ul>
+		<li>Tab/space/arrow keys keyboard control</li>
+		<li>Access Keys for the Dialer and tab switching</li>
+		<li>Contact List table is accessible</li>
+		<li>Captioned images</li>
+		<li>ARIA landmark roles and a polite live region</li>
+		</ul>
+		<h2>A Gratuitous Picture of Nature</h2>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bachalpsee_reflection.jpg/1920px-Bachalpsee_reflection.jpg" alt="Lake Bachalpsee in Switzerland" style="width: 100%">
+		<i>Source: <a href="https://en.wikipedia.org/wiki/Nature#/media/File:Bachalpsee_reflection.jpg" target="_blank">Ryan Gsell; on Wikipedia's Nature article</a></i>
+	</div>
+</div>
+
+<script src="phone.js"></script>
+
+</body>
+
+</html>
